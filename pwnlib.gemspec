@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kyle Cook"]
   spec.email         = ["kylecook80@gmail.com"]
   spec.summary       = %q{Ruby binary pwning library}
-  spec.description   = %q{Library used to create exploits for binariesman}
+  spec.description   = %q{Library used to create exploits for binaries}
   spec.homepage      = ""
   spec.license       = "MIT"
 

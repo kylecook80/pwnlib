@@ -1,26 +1,23 @@
 # Pwnlib
 
-TODO: Write a gem description
+A simple gem used for creating exploits (usually for CTFs)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'pwnlib'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install pwnlib
+Install with `gem install pwnlib` or use bundler
 
 ## Usage
 
-TODO: Write usage instructions here
+Add
+
+```ruby
+require 'pwnlib'
+include Pwnlib
+
+p = process("./app")
+
+p.close
+```
 
 ## Contributing
 

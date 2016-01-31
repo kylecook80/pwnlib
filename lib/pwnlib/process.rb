@@ -7,12 +7,12 @@ class ProcessRun
     @output_buf = []
 
     @get_input = true
-
     @stdout_thr = Thread.new do
       while @get_input
-        next_line = @stdout.readpartial(4096)
-        if next_line
-          @output_buf << next_line
+        data = @stdout.readpartial(4096)
+        if data
+          lines = data.split("\n")
+          @output_buf += lines
         end
       end
     end
@@ -22,6 +22,11 @@ class ProcessRun
     sleep 0.1
     @output_buf.each {|l| puts l; }
     output_clear
+  end
+
+  def raw_buffer
+    sleep 0.1
+    @output_buf
   end
 
   def output_clear
