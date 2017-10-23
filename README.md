@@ -1,4 +1,4 @@
-# Pwnlib
+# Pwnlib v2.0
 
 A simple gem used for creating exploits (usually for CTFs)
 
